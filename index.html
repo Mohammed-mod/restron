@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم الوجبات السريعة</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <button><i class="fas fa-cart-plus"></i> إضافة إلى السلة</button>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- الشعار -->
+            <div class="logo">
+                <img src="logo.png" alt="شعار المطعم">
+            </div>
+        <div class="container">
+            <h1>مطعم الوجبات السريعة</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#menu">قائمة الطعام</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+           
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>استمتع بأفضل الوجبات السريعة!</h2>
+            <p>نحن نقدم لك ألذ الوجبات الجاهزة بسرعة وجودة عالية.</p>
+        </div>
+    </section>
+    <label for="location">اختار المدينة</label>
+    <select id="location" name="location">
+        <option value="riyadh">الرياض</option>
+        <option value="jeddah">جدة</option>
+        <option value="dammam">الدمام</option>
+    </select>
+
+    <section id="order" class="order">
+        <div class="container">
+            <h2>اطلب الآن!</h2>
+            <form id="orderForm">
+                <label for="name">الاسم</label>
+                <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+
+                <label for="dish">اختار الوجبة</label>
+                <select id="dish" name="dish" required>
+                    <option value="burger">برجر لذيذ</option>
+                    <option value="fries">بطاطس مقلية</option>
+                    <option value="pizza">بيتزا</option>
+                </select>
+
+                <label for="quantity">العدد</label>
+                <input type="number" id="quantity" name="quantity" placeholder="أدخل عدد الوجبات" required>
+
+                <button type="submit">إرسال الطلب</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>قائمة الطعام</h2>
+            <div class="menu-item">
+                <img src="burger.jpg" alt="برجر">
+                <h3>برجر لذيذ</h3>
+                <p>سعر: 15 ريال</p>
+            </div>
+            <div class="menu-item">
+                <img src="fries.png" alt="بطاطس مقلية">
+                <h3>بطاطس مقلية</h3>
+                <p>سعر: 8 ريال</p>
+            </div>
+            <div class="menu-item">
+                <img src="pizza.png" alt="بيتزا">
+                <h3>بيتزا</h3>
+                <p>سعر: 25 ريال</p>
+            </div>
+        </div>
+    </section>
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>آراء عملائنا</h2>
+            <div class="review">
+                <p>"أفضل برجر تناولته في حياتي! الخدمة سريعة والوجبة لذيذة."</p>
+                <p>- محمد العلي</p>
+            </div>
+            <div class="review">
+                <p>"البيتزا كانت رائعة! جربتها مع الأصدقاء وكانت تجربة مميزة."</p>
+                <p>- سارة أحمد</p>
+            </div>
+            <div class="review">
+                <p>"خدمة ممتازة، والطعام وصل ساخنًا وبسرعة. أنصح الجميع بتجربة المطعم."</p>
+                <p>- خالد يوسف</p>
+            </div>
+        </div>
+    </section>
+    <div id="chat-widget">
+        <button onclick="startChat()">ابدأ الدردشة</button>
+    </div>
+    <section id="offers" class="offers">
+        <div class="container">
+            <h2>العروض الخاصة</h2>
+            <div class="offer-item">
+                <h3>عرض البرجر المزدوج</h3>
+                <p>احصل على برجر مزدوج مع بطاطس مقلية مقابل 20 ريال فقط!</p>
+            </div>
+            <div class="offer-item">
+                <h3>بيتزا كبيرة</h3>
+                <p>استمتع ببيتزا كبيرة مع مشروب بــ 30 ريال فقط!</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>عن مطعمنا</h2>
+            <p>نحن في مطعم الوجبات السريعة نسعى لتقديم أشهى وأسرع الوجبات مع الحفاظ على أعلى معايير الجودة.</p>
+            <p>تأسسنا في عام 2020 ونحن نعمل بلا توقف لتقديم خدمة ممتازة لعملائنا.</p>
+            <img src="logo.png" alt="فريق العمل">
+        </div>
+    </section>
+
+    <section id="location" class="location">
+        <div class="container">
+            <h2>موقعنا</h2>
+            <div id="map"></div>
+        </div>
+    </section>
+    <script>
+        function initMap() {
+            var location = { lat: 24.7136, lng: 46.6753 };  // إحداثيات الموقع
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: location,
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: "مطعم الوجبات السريعة",
+            });
+        }
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>اتصل بنا</h2>
+            <p>إذا كان لديك أي استفسارات، تواصل معنا عبر البريد الإلكتروني:</p>
+            <p><a href="mailto:info@restaurant.com">info@restaurant.com</a></p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="logo.png" alt="شعار المطعم">
+            </div>
+        </div>
+        <div class="container">
+            <p>&copy; 2024 مطعم الوجبات السريعة. جميع الحقوق محفوظة.</p>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        
+    </footer>
+    
+   
